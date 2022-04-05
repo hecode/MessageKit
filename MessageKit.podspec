@@ -14,7 +14,9 @@ Pod::Spec.new do |s|
    s.swift_version = '5.3'
 
    s.ios.deployment_target = '12.0'
-   s.ios.resources = 'Sources/Assets.xcassets'
+   s.ios.resource_bundles = {
+    "MessageKit" => ['Sources/Assets.xcassets"]
+}
 
    s.dependency 'InputBarAccessoryView', '~> 5.4.0'
 
